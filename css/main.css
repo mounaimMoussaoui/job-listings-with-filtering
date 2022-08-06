@@ -126,14 +126,14 @@ ul {
 }
 
 article.item {
-  width: 75%;
+  width: 77%;
   display: -ms-grid;
   display: grid;
   place-items: center flex-start;
   -ms-grid-columns: auto 1fr 1fr;
   grid-template-columns: auto 1fr 1fr;
   background-color: white;
-  padding: 30px;
+  padding: 25px 30px;
   position: relative;
   margin: -50px auto 20px;
   border-radius: 5px;
