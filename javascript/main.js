@@ -125,7 +125,7 @@ function addEvent(arrLists, arrObj) {
                 });
                 if(!existVal) {
                     let img = document.createElement("img");
-                    img.src = "../images/icon-remove.svg";
+                    img.src = "images/icon-remove.svg";
                     li.appendChild(img);
                     document.querySelector(".container .filtering ul.eleFiltering").appendChild(li);
                     addedItem(itemsFiltering([li], arrObj));

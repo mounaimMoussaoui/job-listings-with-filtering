@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("../../images/bg-header-desktop.svg");
+  background-image: url("../images/bg-header-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -17,7 +17,7 @@ body {
 }
 @media (max-width: 668px) {
   body {
-    background-image: url("../../images/bg-header-mobile.svg");
+    background-image: url("../images/bg-header-mobile.svg");
   }
 }
 
