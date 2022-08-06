@@ -79,14 +79,14 @@ function deleteItem(items) {
                 if(listLis.length == 0) {
                     let filteringBox = document.querySelector(".container .filtering");
                     filteringBox.classList.remove("show");
-                    getData("/javascript/data.json").then((res) => {
+                    getData("./data.json").then((res) => {
                         document.querySelectorAll(".container article.item:not(:first-of-type)").forEach((ele) => {
                             ele.remove();
                         });
                         addedItem(res);
                     });
                 }else {
-                    getData("/javascript/data.json").then((res) => {
+                    getData("./data.json").then((res) => {
                         document.querySelectorAll(".container article.item:not(:first-of-type)").forEach((ele) => {
                             ele.remove();
                         });
@@ -140,7 +140,7 @@ function addEvent(arrLists, arrObj) {
     });
 }
 
-getData("/javascript/data.json").then((res) => {
+getData("./data.json").then((res) => {
     addedItem(res);
     addEvent(document.querySelectorAll(".container ul.poste-skills"), res);
 },
@@ -156,7 +156,7 @@ document.querySelector(".container .filtering button").addEventListener("click",
     [...document.querySelectorAll(".container .item.show")].forEach((ele) => {
         ele.remove();
     })
-    getData("/javascript/data.json").then((res) => {
+    getData("./data.json").then((res) => {
         addedItem(res);
     });
 });
