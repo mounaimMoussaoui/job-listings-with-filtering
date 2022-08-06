@@ -27,7 +27,7 @@ body {
   width: 100vw;
   min-height: 90vh;
   margin: 0px auto;
-  padding: 0px 10px;
+  padding: 0px 10px 50px;
   font-size: 15px;
   font-family: "Secular One", sans-serif;
   display: -webkit-box;
@@ -55,7 +55,7 @@ ul {
 
 .container .filtering {
   background: #fff;
-  width: 80%;
+  width: 75%;
   padding: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -68,7 +68,7 @@ ul {
   margin-top: -35px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .container .filtering.show {
   margin-top: -25px;
@@ -126,16 +126,16 @@ ul {
 }
 
 article.item {
-  width: 80%;
+  width: 75%;
   display: -ms-grid;
   display: grid;
   place-items: center flex-start;
   -ms-grid-columns: auto 1fr 1fr;
   grid-template-columns: auto 1fr 1fr;
   background-color: white;
-  padding: 20px 30px;
+  padding: 30px;
   position: relative;
-  margin: -50px auto 25px;
+  margin: -50px auto 20px;
   border-radius: 5px;
   opacity: 0;
   -webkit-transition: 0.5s;
