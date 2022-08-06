@@ -1,0 +1,45 @@
+@use "../variables/colors" as *;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Josefin+Sans:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;700&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@400;500;700&family=Secular+One&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: $Desaturated-Dark-Cyan;
+    overflow-x: hidden;
+    height: 156px;
+    @media (max-width:668px) {
+        & {
+            background-image: url("../../images/bg-header-mobile.svg");
+        }
+    }
+}
+
+.container {
+    position: absolute;
+    top: 156px;
+    width: 100vw;
+    min-height: 90vh;
+    margin: 0px auto;
+    padding: 0px 10px;
+    font-size: $Font-size;
+    font-family: 'Secular One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: $Light-Grayish-Cyan;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
